@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "DigitalClock";
+    src: url("DS-DIGI.TTF");
+}
+p {
+    font-family: DigitalClock, serif;
+}
