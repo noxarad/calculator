@@ -2,6 +2,47 @@
     font-family: "DigitalClock";
     src: url("DS-DIGI.TTF");
 }
+body, html{
+    margin: 0;
+    padding: 0;
+}
 p {
     font-family: DigitalClock, serif;
+}
+#whole {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#numpad {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    border: black solid;
+    width: 545px;
+}
+#calculator{
+    border: red solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+}
+#numpad {
+    background-color: #454837;
+}
+#numpad > * {
+    width: 120px;
+    height: 120px;
+    margin: 13px 0 0 13px;
+    font-size: 20px;
+}
+#zero {
+    width: 253px;
+}
+#top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
