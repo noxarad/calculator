@@ -19,7 +19,9 @@ p {
     flex-wrap: wrap-reverse;
     flex-direction: row;
     border: black solid;
-    width: 545px;
+    width: auto;
+    background-color: #454837;
+    padding-bottom: 13px;
 }
 #calculator{
     border: red solid;
@@ -27,22 +29,25 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: min-content;
-}
-#numpad {
-    background-color: #454837;
+    width: 465px;
 }
 #numpad > * {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     margin: 13px 0 0 13px;
     font-size: 20px;
 }
 #zero {
-    width: 253px;
+    width: 213px;
 }
-#top {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+#display{
+    width: 439px;
+    height: 50px;
+    background-color: #2c563b;
+}
+#screen {
+    border: red solid;
+    width: auto;
+
+    padding: 10px;
 }
