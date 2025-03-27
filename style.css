@@ -3,6 +3,7 @@
     src: url("DS-DIGI.TTF");
 }
 body, html{
+    background-color: #c0c0c0;
     margin: 0;
     padding: 0;
 }
@@ -24,30 +25,47 @@ p {
     padding-bottom: 13px;
 }
 #calculator{
-    border: red solid;
+    border-bottom: #808080 8px solid;
+    border-right:  #808080 8px solid;
+    border-left: white 8px solid;
+    border-top: white 8px solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 465px;
+    flex-basis: 465px;
 }
 #numpad > * {
-    width: 100px;
+    border-bottom: #808080 4px solid;
+    border-right:  #808080 4px solid;
+    border-left: white 4px solid;
+    border-top: white 4px solid;
+    flex: 0 0 100px;
     height: 100px;
     margin: 13px 0 0 13px;
     font-size: 20px;
 }
 #zero {
-    width: 213px;
+    flex: 0 0 213px;
 }
 #display{
-    width: 439px;
-    height: 50px;
+    /*margin: 10px;*/
+    width: 100%;
+    align-self: stretch;
     background-color: #2c563b;
+    padding-left: 5px;
 }
 #screen {
-    border: red solid;
-    width: auto;
-
-    padding: 10px;
+    width: 100%;
+    flex: 0 1 70px;
+    display: flex;
+    /*padding: 10px;*/
+    border-top: #808080 4px solid;
+    border-left:  #808080 4px solid;
+    border-right: white 4px solid;
+    border-bottom: white 4px solid;
+}
+#display > p {
+    font-size: xxx-large;
+    margin: 0;
 }
